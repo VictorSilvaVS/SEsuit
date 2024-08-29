@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="orientation-message">
+        <p>COLOQUE O CELULAR NA HORIZONTAL PARA CONTINUAR UTILIZANDO O SITE!</p>
+    </div>
+    <script>
+        function checkOrientation() {
+            if (window.innerHeight > window.innerWidth) {
+                // Se o dispositivo está em modo retrato
+                document.getElementById('orientation-message').style.display = 'flex';
+            } else {
+                // Se o dispositivo está em modo paisagem
+                document.getElementById('orientation-message').style.display = 'none';
+            }
+        }
+    
+        // Verifica a orientação quando a janela é carregada ou redimensionada
+        window.addEventListener('resize', checkOrientation);
+        window.addEventListener('orientationchange', checkOrientation);
+    
+        // Verifica a orientação ao carregar a página
+        checkOrientation();
+    </script>
+    
     <div class="container-fluid position-relative">
         <img src="Linha.png" alt="Máquinas de Produção" class="img-fluid imagem-principal">
         
