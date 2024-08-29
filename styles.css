@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container-fluid {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+}
+
+.imagem-principal {
+    width: 100%;
+    height: auto;
+}
+
+.machine {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.3); /* Apenas para visualização, remova para a versão final */
+    border: 1px solid rgba(255, 255, 0, 0.6); /* Apenas para visualização, remova para a versão final */
+}
+
+/* Defina as áreas clicáveis para cada máquina */
+#bobina{
+    top: 40%;
+    left: 6%;
+    width: 10%;
+    height: 10%;
+}
+
+#coilHandling {
+    top: 54%;
+    left: 11%;
+    width: 5%;
+    height: 20%;
+}
+
+#desbobinador {
+    top: 75%;
+    left: 6%;
+    width: 7%;
+    height: 15%;
+}
+
+#cupperPress {
+    top: 63%;
+    left: 17%;
+    width: 10%;
+    height: 30%;
+}
+
+#bodymakers {
+    top: 73%;
+    left: 29%;
+    width: 62%;
+    height: 11%;
+}
+#canWasher {
+    top: 40%;
+    left: 82%;
+    width: 13%;
+    height: 32%;
+}
+#basecoater {
+    top: 36%;
+    left: 68%;
+    width: 10%;
+    height: 20%;
+}
+
+#basecoaterPinOven {
+    top: 37%;
+    left: 52%;
+    width: 15%;
+    height: 15%;
+}
+
+#decoPinOven {
+    top: 37%;
+    left: 20%;
+    width: 15%;
+    height: 15%;
+}
+
+#printer {
+    top: 37%;
+    left: 36.5%;
+    width: 10%;
+    height: 15%;
+}
+
+#insideSpray {
+    top: 15%;
+    left: 18%;
+    width: 15%;
+    height: 15%;
+}
+
+#internalBakeOven {
+    top: 10%;
+    left: 37%;
+    width: 18%;
+    height: 10%;
+}
+
+#necker {
+    top: 10%;
+    left: 57%;
+    width: 13%;
+    height: 10%;
+}
+
+#palletizer {
+    top: 01%;
+    left: 80%;
+    width: 15%;
+    height: 20%;
+}
+/* Estilos para o modal */
+.custom-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    align-items: center;
+    justify-content: center;
+    z-index: 1050; /* Ensure it appears above other content */
+}
+
+.custom-modal-dialog {
+    width: 90%;
+    max-width: 800px; /* Maximum width of the modal */
+    margin: 0 auto;
+    position: relative;
+}
+
+.custom-modal-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    position: relative;
+}
+
+.custom-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #007bff; /* Header background color */
+    color: #ffffff; /* Header text color */
+}
+.modal-body a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+.modal-body a i {
+    margin-right: 8px;
+}
+.modal-body a:hover {
+    color: #0056b3;
+}
+.custom-modal-title {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.custom-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.custom-modal-body {
+    padding: 20px;
+}
+
+.custom-modal-body iframe {
+    width: 100%;
+    height:  400px; /* Set height of the iframe */
+    border: none; /* Remove default border */
+}
+
+.custom-modal.show {
+    display: flex; /* Display as flex when shown */
+}
+/* Estilos para o rodapé */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff; /* Texto branco */
+    padding: 20px 5%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    font-family: 'Arial', sans-serif; /* Fonte legível */
+}
+
+.footer .footer-logo {
+    max-height: 50px; /* Mantém uma altura padrão para o logo */
+    margin-right: 40px; /* Espaço entre o logo e os itens seguintes */
+}
+
+.footer .footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-content p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.footer .btn {
+    margin-left: 15px; /* Espaço entre os botões */
+    color: #ffffff;
+    background-color: #007bff; /* Cor vibrante para botões */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Bordas arredondadas para um visual moderno */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Efeito suave de transição */
+}
+
+.footer .btn:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+    transform: translateY(-2px); /* Pequena elevação no hover */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 5%;
+    }
+
+    .footer .footer-content {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .footer .footer-content p {
+        margin-bottom: 10px;
+    }
+
+    .footer .btn {
+        margin: 5px 0;
+    }
+}

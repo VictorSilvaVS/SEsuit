@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEsuit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid position-relative">
+        <img src="Linha.png" alt="Máquinas de Produção" class="img-fluid imagem-principal">
+        
+        <!-- Áreas clicáveis para cada máquina -->
+        <div class="machine" id="bobina" data-toggle="modal" data-target="#modalBobina"></div>
+        <div class="machine" id="coilHandling" data-toggle="modal" data-target="#modalCoilHandling"></div>
+        <div class="machine" id="desbobinador" data-toggle="modal" data-target="#modalDesbobinador"></div>
+        <div class="machine" id="cupperPress" data-toggle="modal" data-target="#modalCupperPress"></div>
+        <div class="machine" id="conveyingSystems" data-toggle="modal" data-target="#modalConveyingSystems"></div>
+        <div class="machine" id="bodymakers" data-toggle="modal" data-target="#modalBodymakers"></div>
+        <div class="machine" id="basecoater" data-toggle="modal" data-target="#modalBasecoater"></div>
+        <div class="machine" id="basecoaterPinOven" data-toggle="modal" data-target="#modalBasecoaterPinOven"></div>
+        <div class="machine" id="printer" data-toggle="modal" data-target="#modalPrinter"></div>
+        <div class="machine" id="decoPinOven" data-toggle="modal" data-target="#modalDecoPinOven"></div>
+        <div class="machine" id="insideSpray" data-toggle="modal" data-target="#modalInsideSpray"></div>
+        <div class="machine" id="internalBakeOven" data-toggle="modal" data-target="#modalInternalBakeOven"></div>
+        <div class="machine" id="necker" data-toggle="modal" data-target="#modalNecker"></div>
+        <div class="machine" id="palletizer" data-toggle="modal" data-target="#modalPalletizer"></div>
+        <div class="machine" id="canWasher" data-toggle="modal" data-target="#modalCanWasher"></div>
+        
+        <!-- Modais para cada máquina -->
+        <div class="modal fade" id="modalBobina" tabindex="-1" role="dialog" aria-labelledby="modalBobina" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBobina"><i class="bi bi-file-earmark-text"></i> Procedimentos Técnicos - Bobina</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Parametros padrão das bobinas.</p>
+                        <a href="https://giorgiglobal-my.sharepoint.com/:x:/g/personal/victor_nascimento_canpack_com/EaHcr0b-BpBPhun_wc-EWJcBGfVEZrb7eDWPDmH1zVRKGQ?e=xcAIwR" target="_blank"><i class="bi bi-info-circle"></i> Mais Informações sobre Bobina</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalCoilHandling" tabindex="-1" role="dialog" aria-labelledby="modalCoilHandlingLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCoilHandlingLabel">Procedimentos Técnicos - Coil Handling</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Detalhes técnicos e procedimentos da seção de Coil Handling.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalDesbobinador" tabindex="-1" role="dialog" aria-labelledby="modalDesbobinador aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDesbobinador">Procedimentos Técnicos - Desbobinador</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Detalhes técnicos e procedimentos da seção de Coil Handling.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal exemplo para Cupper Press -->
+        <div class="modal fade" id="modalCupperPress" tabindex="-1" role="dialog" aria-labelledby="modalCupperPressLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCupperPressLabel">Procedimentos Técnicos - Cupper Press</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Parametros padrão da cupper.</p>
+                        <a href="https://sistemadegestao.canpack.ad/se/generic/gn_linkshare/linkshare.php?key=4hBnm1JcxD3&cdisosystem=73" target="_blank"><i class="bi bi-info-circle"></i> Mais Informações sobre cupper</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalBodymakers" tabindex="-1" role="dialog" aria-labelledby="modalBodymakers" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBodymakers">Procedimentos Técnicos - BodyMaker's</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Detalhes técnicos e procedimentos das bodymakers.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalCanWasher" tabindex="-1" role="dialog" aria-labelledby="modalCanWasher" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCanWasher">Procedimentos Técnicos - Lavadora</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Parametros padrão da lavadora 22.</p>
+                        <a href="https://sistemadegestao.canpack.ad/se/generic/gn_linkshare/linkshare.php?key=13BV5b4no23&cdisosystem=73" target="_blank"><i class="bi bi-info-circle"></i> Parametros da lavadora 22</a>
+                        <a href="https://sistemadegestao.canpack.ad/se/generic/gn_linkshare/linkshare.php?key=c0da817KgA8&cdisosystem=73" target="_blank"><i class="bi bi-info-circle"></i> Parametros da lavadora 23</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalBasecoater" tabindex="-1" role="dialog" aria-labelledby="modalBasecoater" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBasecoater">Procedimentos Técnicos - Verniz base</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Detalhes técnicos e procedimentos da verniz base.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalBasecoaterPinOven" tabindex="-1" role="dialog" aria-labelledby="modalBasecoaterPinOven" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBasecoaterPinOven">Procedimentos Técnicos - Forno do verniz base</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Detalhes técnicos e procedimentos para o forno do verniz base.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalPrinter" tabindex="-1" role="dialog" aria-labelledby="modalPrinter" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPrinter">Procedimentos Técnicos - Printer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Detalhes técnicos e procedimentos para a printer</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalDecoPinOven" tabindex="-1" role="dialog" aria-labelledby="modalDecoPinOven" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalDecoPinOven">Procedimentos Técnicos - Forno da printer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Detalhes técnicos e procedimentos para o forno da printer</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="modal fade" id="modalInsideSpray" tabindex="-1" role="dialog" aria-labelledby="modalInsideSpray" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalInsideSpray">Procedimentos Técnicos - LSM</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Detalhes técnicos e procedimentos para a LSM</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div class="modal fade" id="modalInternalBakeOven" tabindex="-1" role="dialog" aria-labelledby="modalInternalBakeOven" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalInternalBakeOven">Procedimentos Técnicos - Forno do verniz interno</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Detalhes técnicos e procedimentos para o forno do verniz interno</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div class="modal fade" id="modalNecker" tabindex="-1" role="dialog" aria-labelledby="modalNecker" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalNecker">Procedimentos Técnicos - Necker</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Parametros padrão da lavadora 22.</p>
+                        <a href="https://sistemadegestao.canpack.ad/se/generic/gn_linkshare/linkshare.php?key=1BChnCpEWgZ&cdisosystem=73" target="_blank"><i class="bi bi-info-circle"></i> Parametros de lubrificação do Necker</a>
+                        <!-- <a href="https://sistemadegestao.canpack.ad/se/generic/gn_linkshare/linkshare.php?key=c0da817KgA8&cdisosystem=73" target="_blank"><i class="bi bi-info-circle"></i> Parametros da lavadora 23</a> -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+        </div>
+        </div> 
+        <div class="modal fade" id="modalPalletizer" tabindex="-1" role="dialog" aria-labelledby="modalPalletizer" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPalletizer">Procedimentos Técnicos - Paletizadora</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Detalhes técnicos e procedimentos para a Paletizadora</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+        </div>
+        </div>          
+    </div>
+        <!-- Adicione mais modais conforme necessário -->
+    </div>
+   <!-- Barra de Navegação Inferior -->
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#home" class="btn btn-primary">Home</a>
+                <a href="#" id="hfi-link" class="btn btn-primary">Spoilage</a>
+                <a href="#contact" class="btn btn-primary">Contato</a>
+            </div>
+            <div class="col-md-6 text-right">
+                <img src="Logo.png" alt="Logotipo" class="footer-logo">
+        </div>
+    </div>
+</footer>
+<div class="custom-modal" id="biModal">
+    <div class="custom-modal-dialog">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h5 class="custom-modal-title">Spoilage - Canpack
+                </h5>
+                <button type="button" class="custom-close" id="customClose">&times;</button>
+            </div>
+            <div class="custom-modal-body">
+                <iframe src="" id="biIframe" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        document.getElementById('hfi-link').addEventListener('click', function(event) {
+    event.preventDefault(); // Previne o comportamento padrão do link
+
+    // URL do arquivo BI
+    var biUrl = 'https://app.powerbi.com/reportEmbed?reportId=e1c73170-fa7a-44e8-822f-de3513c629ad&autoAuth=true&ctid=d57e2fdb-b528-4dd3-b0b6-325ae4c0b84e'; // Substitua pelo link do seu arquivo BI
+
+    // Atualiza o src do iframe e abre o modal
+    document.getElementById('biIframe').src = biUrl;
+    document.getElementById('biModal').classList.add('show');
+});
+
+// Fecha o modal ao clicar no botão de fechar
+document.getElementById('customClose').addEventListener('click', function() {
+    document.getElementById('biModal').classList.remove('show');
+    document.getElementById('biIframe').src = ''; // Limpa o src do iframe
+});
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
