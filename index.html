@@ -9,23 +9,40 @@
 </head>
 <body>
     <div id="orientation-message">
-        <p>COLOQUE O CELULAR NA HORIZONTAL PARA CONTINUAR UTILIZANDO O SITE!</p>
+        <p>ÃTENÇÃO!!!
+        <br>
+        Acesso invalido, dispostivo não autorizado pela CANPACK GROUP</p>
     </div>
     <script>
+        let orientationTimeout;
+
         function checkOrientation() {
             if (window.innerHeight > window.innerWidth) {
                 // Se o dispositivo está em modo retrato
                 document.getElementById('orientation-message').style.display = 'flex';
+
+                // Inicia o temporizador de 5 segundos
+                if (!orientationTimeout) {
+                    orientationTimeout = setTimeout(() => {
+                        window.location.href = 'https://www.canpack.com/';
+                    }, 5000);
+                }
             } else {
                 // Se o dispositivo está em modo paisagem
                 document.getElementById('orientation-message').style.display = 'none';
+
+                // Cancela o temporizador se a orientação mudar
+                if (orientationTimeout) {
+                    clearTimeout(orientationTimeout);
+                    orientationTimeout = null;
+                }
             }
         }
-    
+
         // Verifica a orientação quando a janela é carregada ou redimensionada
         window.addEventListener('resize', checkOrientation);
         window.addEventListener('orientationchange', checkOrientation);
-    
+
         // Verifica a orientação ao carregar a página
         checkOrientation();
     </script>
